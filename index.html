@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <link rel="stylesheet" href="./css/all.css" />
+
+        <title>Frontend Mentor | Ping coming soon page</title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+    </head>
+    <body>
+        <main class="main">
+            <img class="ping-logo" src="./images/logo.svg" alt="ping logo" />
+            <h1 class="main-title">
+                We are launching <span class="main-title-soon">soon!</span>
+            </h1>
+            <p class="main-description">Subscribe and get notified</p>
+            <form class="main-form" id="form" method="post">
+                <label for="email" class="main-form-label">Email</label>
+                <div class="input-wrap">
+                    <input
+                        type="text"
+                        id="email"
+                        class="main-form-input"
+                        placeholder="Your email address..."
+                    />
+                    <div id="notification"></div>
+                </div>
+
+                <button class="main-form-button" type="submit">
+                    Notify Me
+                </button>
+            </form>
+            <img
+                class="main-illust"
+                src="./images/illustration-dashboard.png"
+                alt="dashboard"
+            />
+            <div class="main-footer">
+                <div>
+                    <a
+                        class="net-icon"
+                        href="http://"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                        class="net-icon"
+                        href="http://"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                        class="net-icon"
+                        href="http://"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                </div>
+                <span class="copyright"
+                    >&copy; Copyright Ping. All rights reserved.</span
+                >
+            </div>
+        </main>
+
+        <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+        <script src="./script/script.js"></script>
+    </body>
+</html>

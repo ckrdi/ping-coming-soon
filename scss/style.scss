@@ -1,0 +1,183 @@
+@import "config";
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .ping-logo {
+        padding: 1rem;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        height: 75px;
+
+        @include mq(1024px) {
+            margin-top: 2.5rem;
+        }
+    }
+    &-title {
+        font-weight: 300;
+        font-size: 2rem;
+        color: $gray;
+        padding: 1rem;
+
+        @include mq(1024px) {
+            font-size: 2.2rem;
+            padding: 0.5rem;
+        }
+
+        &-soon {
+            font-size: 2rem;
+            font-weight: 700;
+            color: black;
+
+            @include mq(1024px) {
+                font-size: 2.2rem;
+            }
+        }
+    }
+    &-description {
+        padding: 1rem;
+
+        @include mq(1024px) {
+            padding: 0.5rem;
+        }
+    }
+    &-form {
+        padding: 1rem;
+        width: 75%;
+        max-width: 750px;
+
+        @include mq(1024px) {
+            display: flex;
+            padding: 0.5rem;
+        }
+
+        &-label {
+            display: none;
+        }
+        .input-wrap {
+            display: block;
+
+            @include mq(1024px) {
+                flex: 1;
+                margin-right: 0.5rem;
+            }
+        }
+        &-input {
+            font-family: "Libre Franklin", sans-serif;
+            padding: 1rem 3rem;
+            margin-bottom: 0.8rem;
+            color: $pale-blue;
+            width: 100%;
+            border: 1px solid $pale-blue;
+            border-radius: 3rem;
+            outline-style: none;
+
+            @include mq(1024px) {
+                margin-bottom: 0.3rem;
+                padding: 0.5rem 1.5rem;
+            }
+        }
+        &-input:focus {
+            outline: 1px solid $blue;
+        }
+        #notification {
+            color: $light-red;
+            font-size: 0.8rem;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 1rem;
+
+            @include mq(1024px) {
+                text-align: left;
+                margin-left: 1.5rem;
+            }
+        }
+        &-button {
+            padding: 1rem;
+            background-color: $blue;
+            color: white;
+            width: 100%;
+            border: none;
+            border-radius: 3rem;
+            box-shadow: 0 0 20px hsla(223, 87%, 63%, 0.2);
+
+            @include mq(1024px) {
+                padding: 0.5rem;
+                max-width: 200px;
+                max-height: 50px;
+            }
+        }
+        &-button:hover {
+            background-color: $pale-blue;
+            cursor: pointer;
+        }
+        &-button:active {
+            transform: translateY(3px);
+        }
+    }
+    &-illust {
+        width: 100vw;
+        max-width: 700px;
+        padding: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 15rem;
+
+        @include mq(1024px) {
+            margin-top: 0;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+    }
+    &-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .net-icon {
+            border: 1px solid $pale-blue;
+            border-radius: 50%;
+            padding: 10px 22.5px;
+            margin: 10px;
+            position: relative;
+
+            .fab {
+                position: absolute;
+                color: $blue;
+            }
+            .fa-facebook-f {
+                top: 12px;
+                left: 16px;
+            }
+            .fa-twitter {
+                top: 12px;
+                left: 13px;
+            }
+            .fa-instagram {
+                top: 12px;
+                left: 13px;
+            }
+        }
+        .net-icon:hover {
+            border: 1px solid white;
+            background-color: $blue;
+
+            .fab {
+                color: white;
+            }
+        }
+        .copyright {
+            margin-top: 2rem;
+            color: $gray;
+            margin-bottom: 5rem;
+
+            @include mq(1024px) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
